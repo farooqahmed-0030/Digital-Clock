@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <style>
+        /* Apply for large screens, like your PC*/
+/* @media (min-width: 1348px) 
+    #clock-container {
+        background-size: 100%;
+    } */
+
+
+/* Apply for smaller screens, like tablets or phones */
+/* @media (max-width: 739px) {
+    #clock-container {
+        background-size: cover3
+    }
+}  */
+#clock-container{ 
+            position: relative;
+            margin: auto;
+            height: 40vw;
+            width: 40vw;
+            /* height: 440px;
+            width: 440px; */
+            background: url(Clock.jpeg) no-repeat;
+            background-size: cover;
+
+        }
+#hour, #minute, #second{
+    position: absolute;
+    background-color: black;
+    border-radius: 10px;
+}
+#hour{
+    width: 1.4%;
+    height: 23%;
+    top: 29.5%;
+    left: 49.5%;
+    transform-origin: bottom;
+}
+#minute{
+    width: 1%;
+    height: 26%;
+    top: 26.5%;
+    left: 49.15%;
+    transform-origin: bottom;
+}
+#second{
+    width: 0.75%;
+    height: 27%;
+    top: 25%;
+    left: 49.43%;
+    transform-origin: bottom;
+}
+    </style>
+</head>
+<body>
+    <div id="clock-container">
+        <div id="hour"></div>
+        <div id="minute"></div>
+        <div id="second"></div>
+    </div>
+    <script src="Clock.js"></script>
+</body>
+</html>
